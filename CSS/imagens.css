@@ -1,0 +1,17 @@
+.logo {
+    height: 140px;
+    width: 300px;
+    padding-left: 10px;
+
+}
+
+.banner{
+    
+}
+
+.banner img{
+    height: auto;
+    width: 100%;
+    display: block;
+    
+}
