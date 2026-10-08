@@ -11,3 +11,30 @@
     letter-spacing: 5px;
     
 }
+
+
+
+.secao1 h1{
+    font-family: Lora, serif;
+    font-size: 35px;
+    color: #0B3D5C;
+    
+    
+}
+
+.secao1 h2{
+    font-family: Lora, serif;
+    font-size: 20px;
+    color: #0B3D5C;
+}
+
+.secao1 h3{
+    width: 50%;
+    color: #0B3D5C;
+}
+
+.secao1 p{
+    width: 50%;
+    padding-top: 10px;
+    color: #0B3D5C;
+}
