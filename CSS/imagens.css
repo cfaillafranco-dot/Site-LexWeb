@@ -15,3 +15,9 @@
     display: block;
     
 }
+
+.membro img{
+    height: 280px;
+    width: 300px;
+    border-radius: 50%;
+}
