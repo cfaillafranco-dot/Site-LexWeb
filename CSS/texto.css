@@ -30,12 +30,12 @@
 }
 
 .secao1 h3{
-    width: 50%;
+    width: 70%;
     color: #0B3D5C;
 }
 
 .secao1 p{
-    width: 50%;
+    width: 70%;
     padding-top: 10px;
     color: #0B3D5C;
 }
@@ -64,17 +64,17 @@
     
 }
 
-.secao3 h1{
+.secao4 h1{
     color: #0B3D5C;
     font-family: Lora, serif;
 }
 
-.secao3 h2{
+.secao4 h2{
     color: #0B3D5C;
     font-family: Lora, serif;
 }
 
-.secao3 h3{
+.secao4 h3{
     color: #0B3D5C;
     font-family: Lora, serif;
     text-align: center;
