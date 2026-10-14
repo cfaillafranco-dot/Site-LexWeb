@@ -1,5 +1,15 @@
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -152,6 +162,8 @@ main{
 
 .secao4{
     background-color: #F8F6F0;
+    display: flex;
+    flex-direction: column;
     
 }
 
@@ -161,9 +173,17 @@ main{
     padding-top: 40px;
 }
 
-.thaisalmeida h3{
- padding-bottom: 60px;
+.tais-almeida{
+    text-align: center;
 }
+
+.imagem4{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 80px;
+}
+
+
 
 .secao3img img, .secao3 p{
     flex: 1;
@@ -172,9 +192,73 @@ main{
 }
 
 footer{
-    height: 200px;
     background-color: #F2EEE6;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 30px;
 }
+
+.equipe{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.membro-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contatos{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+     
+}
+
+
+
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footer-projetos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer-projetos a{
+    margin-top: 10px;
+}
+
+.projeto-link{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 4px 8px;
+    background-color: #F8F6F0;
+    border: 1px solid #E2DACB;
+    border-radius: 8px;
+    text-decoration: none; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+
+
+
+
+
 
 /* TABLETS */
 @media (max-width: 900px) {
@@ -273,6 +357,69 @@ footer{
         height: auto;
         margin: 30px auto;
     }
+
+    /* Seção Projetos */
+    .secao4 {
+        padding: 30px 20px;
+    }
+
+    .secao4txt {
+        padding-top: 20px;
+    }
+
+    .tais-almeida {
+        padding: 10px;
+    }
+
+    .imagem4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        padding: 40px 10px;
+    }
+
+    .imagem4 p {
+        width: 55%;
+        font-size: 16px;
+        line-height: 1.7;
+        overflow-wrap: break-word;
+    }
+
+    .imagem4 img {
+        width: 40%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    /* Rodapé */
+    .footer-logo img {
+        width: 300px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contatos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .equipe,
+    .footer-projetos {
+        flex: 1 1 200px;
+        min-width: 0;
+    }
+
+    .footer-card {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 0;
+    }
 }
 
 
@@ -281,40 +428,57 @@ footer{
 
     /* Header */
     header {
+        display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; 
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
     }
 
     .logo {
         width: 180px;
+        padding-right: 20px;
+
     }
 
     nav {
         width: 100%;
-        flex: none;
+        display: flex;
+        justify-content: center;
     }
 
     .navbar {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 0;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
     }
 
     .navbar a {
-        padding: 10px 6px;
-        font-size: 11px;
-        letter-spacing: 0;
+        padding: 8px 10px;
+        font-size: 12px;
+        text-align: center;
     }
 
     .card {
-        margin: 0;
-        justify-content: center;
-        gap: 8px;
-        flex-wrap: wrap;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        width: 100%;
+        margin: 15px auto 0 auto;
+        padding: 0;
     }
 
     .socialContainer {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     /* Seção 1 */
@@ -339,14 +503,35 @@ footer{
 
     /* Cards: uma coluna */
     .cards {
-        grid-template-columns: minmax(0, 1fr);
-        padding: 10px ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 60px;
+        gap: 20px;
     }
 
-    .card1 {
-        width: 100%;
-        gap: 10px;
+    
+
+    .card1 i{
+        display: block;
+        margin: 0 auto 10px auto;
+        text-align: center;
     }
+
+    .containersecao1 {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .card1 h3,
+    .card1 p {
+        text-align: center;
+        width: 100%;    
+    }
+
 
     /* Sobre nós */
     .secao2 {
@@ -413,6 +598,10 @@ footer{
         line-height: 1.7;
     }
 
+    .secao3txt h3, h1{
+        padding-top: 10px;
+    }
+
     /* Projetos */
     .secao4 {
         padding: 20px 10px;
@@ -441,6 +630,167 @@ footer{
     footer {
         height: auto;
         min-height: 150px;
+    }
+
+     /* Seção Projetos */
+    .secao4 {
+        padding: 25px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .secao4txt {
+        width: 100%;
+        padding-top: 10px;
+        text-align: center;
+    }
+
+    .secao4txt h1 {
+        font-size: 28px;
+    }
+
+    .secao4txt h2 {
+        font-size: 18px;
+    }
+
+    .tais-almeida {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .tais-almeida h3 {
+        font-size: 20px;
+        padding: 10px 0;
+        overflow-wrap: break-word;
+    }
+
+    .tais-almeida p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    /* Texto acima da imagem */
+    .imagem4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 25px;
+        padding: 25px 0;
+        box-sizing: border-box;
+    }
+
+    .imagem4 p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: justify;
+        overflow-wrap: normal;
+        box-sizing: border-box;
+    }
+
+    .imagem4 img {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+
+    /* Rodapé */
+    footer {
+        width: 100%;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .footer-logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-logo img {
+        width: 250px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contatos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 35px;
+    }
+
+    .equipe {
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .membro-item {
+        width: 100%;
+        max-width: 280px;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .membro-item h3 {
+        font-size: 15px;
+    }
+
+    .footer-projetos {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-projetos h3 {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+
+    .projeto-link {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        width: auto;
+        max-width: 100%;
+        margin: 0;
+        padding: 10px;
+        
+        
+    }
+
+    .socialContainer {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+    }
+
+    .Btn {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .Btn:hover {
+        width: 45px;
+    }
+
+    .text {
+        display: none;
     }
 }
 

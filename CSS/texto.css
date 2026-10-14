@@ -118,3 +118,40 @@
     text-align: center;
     padding-top: 20px;
 }
+
+.tais-almeida h3{
+    color: #0B3D5C;
+    font-family: Lora, serif;
+    padding-top: 20px;
+}
+
+.imagem4 p{
+    color: #0B3D5C;
+    font-family: Lora, serif;
+    line-height: 1.5;
+    width: 45%;
+}
+
+.tais-almeida p{
+    color: #0B3D5C;
+    font-family: Lora, serif;
+}
+
+.contatos h3, h2{
+    font-family: Lora, serif;
+    color: #0B3D5C;
+    margin: 5px;    
+}
+
+.equipe h2{
+
+}
+
+.footer-projetos h2{
+    font-family: Lora, serif;
+    color: #0B3D5C;
+}
+
+.footer-projetos h3{
+    padding-top: 20px;
+}
