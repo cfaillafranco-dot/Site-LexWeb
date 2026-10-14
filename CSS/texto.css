@@ -64,6 +64,44 @@
     
 }
 
+.historia h2{
+    background-color: #0B3D5C;
+    border-left: 3px solid #C99700;
+    color: #fff;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.secao3 h1{
+    font-family: Lora, serif;
+    color: #0B3D5C;
+    
+    
+}
+
+.secao3 h3{
+    font-family: Lora, serif;
+    border-bottom: 1px solid #0B3D5C;
+    color: #0B3D5C;
+    width: 20%;
+    
+}
+
+.secao3txt p{
+    font-family: Lora, serif;
+    color: #0B3D5C; 
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+    
+    
+}
+
+
+
+
 .secao4 h1{
     color: #0B3D5C;
     font-family: Lora, serif;

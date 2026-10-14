@@ -125,9 +125,29 @@ main{
     line-height: 1.5;
 }
 
+
+
 .secao3{
-    height: 800px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    box-sizing: border-box;
     background-color: #F2EEE6;
+    
+}
+
+.secao3txt{
+    flex: 1;
+    min-width: 0;
+    
+
+    
+}
+
+.secao3img{
+    flex: 1;
+    min-width: 0;
 }
 
 .secao4{
@@ -145,9 +165,282 @@ main{
  padding-bottom: 60px;
 }
 
+.secao3img img, .secao3 p{
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
 footer{
     height: 200px;
     background-color: #F2EEE6;
 }
 
+/* TABLETS */
+@media (max-width: 900px) {
+
+    /* Header */
+    header {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 200px;
+        height: auto;
+        
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    /* Cards: duas colunas */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .card1 {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .containersecao1 {
+        min-width: 0;
+        padding: 10px;
+    }
+
+    .card1 h3,
+    .card1 p {
+        width: 100%;
+    }
+
+    /* Fotos da equipe */
+    .membros {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .membro {
+        max-width: 240px;
+    }
+
+    .membro img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+    }
+
+    .historia {
+        width: 85%;
+    }
+
+    /* Seção LexWeb */
+    .secao3 {
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .secao3txt,
+    .secao3img {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .secao3img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Projetos */
+    .secao4 img {
+        display: block;
+        width: 90%;
+        max-width: 100%;
+        height: auto;
+        margin: 30px auto;
+    }
+}
+
+
+/* CELULARES */
+@media (max-width: 600px) {
+
+    /* Header */
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    nav {
+        width: 100%;
+        flex: none;
+    }
+
+    .navbar {
+        justify-content: center;
+        gap: 0;
+    }
+
+    .navbar a {
+        padding: 10px 6px;
+        font-size: 11px;
+        letter-spacing: 0;
+    }
+
+    .card {
+        margin: 0;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .socialContainer {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Seção 1 */
+    .secao1 {
+        padding: 20px 12px;
+    }
+
+    .secao1txt {
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .secao1 h1,
+    .secao2txt h1,
+    .secao4txt h1 {
+        font-size: 28px;
+    }
+
+    .secao1 h2 {
+        font-size: 17px;
+    }
+
+    /* Cards: uma coluna */
+    .cards {
+        grid-template-columns: minmax(0, 1fr);
+        padding: 10px ;
+    }
+
+    .card1 {
+        width: 100%;
+        gap: 10px;
+    }
+
+    /* Sobre nós */
+    .secao2 {
+        min-height: 0;
+        padding: 30px 15px 40px;
+        gap: 25px;
+    }
+
+    .membros {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 0;
+    }
+
+    .membro {
+        width: 100%;
+        max-width: 240px;
+    }
+
+    .membro img {
+        max-width: 220px;
+    }
+
+    .secao2 p {
+        font-size: 16px;
+    }
+
+    .historia {
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .historia h2 {
+        width: fit-content;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    /* Seção LexWeb: imagem abaixo do texto */
+    .secao3 {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px 20px;
+        gap: 25px;
+    }
+
+    .secao3txt,
+    .secao3img {
+        width: 100%;
+    }
+
+    .secao3 h1 {
+        font-size: 27px;
+    }
+
+    .secao3 h3 {
+        width: fit-content;
+    }
+
+    .secao3txt p {
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    /* Projetos */
+    .secao4 {
+        padding: 20px 10px;
+    }
+
+    .secao4 img {
+        width: 100%;
+        height: auto;
+        margin: 25px auto;
+    }
+
+    .thaisalmeida h3 {
+        padding: 10px 5px 30px;
+        overflow-wrap: break-word;
+    }
+
+    .thaisalmeida img {
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin: 30px auto;
+    }
+
+    /* Rodapé */
+    footer {
+        height: auto;
+        min-height: 150px;
+    }
+}
 
