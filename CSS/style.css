@@ -64,7 +64,8 @@ main{
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
-    max-width: 1400px;
+    max-width: 1200px;
+    max-height: 800px;
     padding-top: 20px;
     
     
@@ -254,6 +255,97 @@ footer{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
 }
+
+
+/* codigo do alysson */
+.center {
+    padding: 46px 22px 18px;
+    background: var(--cor-superficie-suave);
+}
+ 
+.texto_centro {
+    width: 100%;
+    max-width: var(--largura-conteudo);
+    margin: 0 auto;
+    color: var(--cor-marinho);
+    font-family: "Lora", Georgia, serif;
+    font-size: clamp(1.25rem, 2.5vw, 1.8rem);
+    line-height: 1.35;
+    text-align: left;
+}
+ 
+.texto_centro h2 {
+    max-width: 850px;
+    margin: 0;
+    font: inherit;
+}
+ 
+.servicos-section {
+    display: block;
+    width: 100%;
+    padding: 26px 22px 72px;
+    background: var(--cor-superficie-suave);
+}
+ 
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: var(--largura-conteudo);
+    margin: 0 auto;
+}
+ 
+.card-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 310px;
+    padding: clamp(24px, 3vw, 34px);
+    border: 1px solid #0B3D5C;
+    border-radius: var(--raio-card);
+    background: var(--cor-superficie);
+    color: var(--cor-texto);
+    box-shadow: 0 5px 18px rgb(9 28 43 / 5%);
+    transition: transform 200ms ease,
+                box-shadow 200ms ease,
+                border-color 200ms ease;
+}
+ 
+.card-item:hover {
+    transform: translateY(-4px);
+    border-color: rgb(165 138 93 / 60%);
+    box-shadow: var(--sombra-card);
+}
+ 
+ 
+.card-item .imagens {
+    display: block;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    margin: 0 0 22px;
+    object-fit: contain;
+}
+ 
+.card-item .titulo {
+    margin: 0 0 12px;
+    color: var(--cor-marinho);
+    font-family: "Lora", Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+ 
+.card-item .descricao {
+    margin: 0 0 22px;
+    color: var(--cor-texto-suave);
+    font-size: 0.98rem;
+    line-height: 1.7;
+}
+ 
+
 
 
 
