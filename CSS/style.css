@@ -317,17 +317,10 @@ footer{
     transform: translateY(-4px);
     border-color: rgb(165 138 93 / 60%);
     box-shadow: var(--sombra-card);
+    
 }
  
  
-.card-item .imagens {
-    display: block;
-    flex-shrink: 0;
-    width: 52px;
-    height: 52px;
-    margin: 0 0 22px;
-    object-fit: contain;
-}
  
 .card-item .titulo {
     margin: 0 0 12px;
@@ -336,6 +329,7 @@ footer{
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.4;
+    
 }
  
 .card-item .descricao {
@@ -343,6 +337,7 @@ footer{
     color: var(--cor-texto-suave);
     font-size: 0.98rem;
     line-height: 1.7;
+    
 }
  
 
@@ -351,6 +346,14 @@ footer{
     .container-card {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 18px;
+    }
+
+    .card-item .descricao{
+        padding-left: 80px;
+    }
+
+    .card-item .titulo{
+        padding-left: 80px;
     }
 }
  
