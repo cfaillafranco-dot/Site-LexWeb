@@ -290,7 +290,7 @@ footer{
 .container-card {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
+    gap: 40px;
     width: 100%;
     max-width: var(--largura-conteudo);
     margin: 0 auto;
