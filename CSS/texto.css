@@ -13,6 +13,16 @@
     
 }
 
+.secao1txt::after{
+  content: "";                     /* obrigatório, mesmo vazio */
+  display: block;                  /* faz ocupar a própria linha */
+  width: 80px;                     /* comprimento da linha */
+  height: 3px;                     /* espessura */
+  background-color: #c9a227;       /* dourado */
+  margin: 12px auto 0;             /* centraliza e dá espaço acima */
+
+}
+
 
 
 .secao1 h1{
@@ -40,10 +50,20 @@
     color: #0B3D5C;
 }
 
+.secao2txt::after{
+    content: "";                     /* obrigatório, mesmo vazio */
+    display: block;                  /* faz ocupar a própria linha */
+    width: 80px;                     /* comprimento da linha */
+    height: 3px;                     /* espessura */
+    background-color: #c9a227;       /* dourado */
+    margin: 12px auto 0;
+}
+
 .secao2 h1{
     color: #0B3D5C;
     font-family: Lora, serif;
 }
+
 
 .secao2 h2{
     color: #0B3D5C;
@@ -54,6 +74,7 @@
 .secao2 h3{
     color: #0B3D5C;
     font-family: Lora, serif;
+    padding-top: 10px;
 }
 
 .secao2 p{
@@ -61,17 +82,33 @@
     font-size: 20px;
     color: #0B3D5C;
     font-family: Lora, serif;
+    padding-top: 10px;
     
+}
+
+.membro h3{
+    font-weight: bold;
+    color: #0b3d5c;
+    margin-top: 10px;
+    letter-spacing: 0.5px;           /* leve espaçamento entre as letras */
+}
+
+.membro p{
+    font-weight: bold;
+    color: #0b3d5c;
+    margin-top: 10px;
+    letter-spacing: 0.5px;           /* leve espaçamento entre as letras */
 }
 
 .historia h2{
     background-color: #0B3D5C;
     border-left: 3px solid #C99700;
     color: #fff;
-    width: 30%;
+    width: 40%;
     margin: auto;
     text-align: center;
 }
+
 
 .secao3 h1{
     font-family: Lora, serif;
@@ -99,7 +136,14 @@
     
 }
 
-
+.secao4txt::after{
+    content: "";                     /* obrigatório, mesmo vazio */
+    display: block;                  /* faz ocupar a própria linha */
+    width: 80px;                     /* comprimento da linha */
+    height: 3px;                     /* espessura */
+    background-color: #c9a227;       /* dourado */
+    margin: 12px auto 0;             /* centraliza e dá espaço acima */
+}
 
 
 .secao4 h1{
@@ -130,6 +174,8 @@
     font-family: Lora, serif;
     line-height: 1.5;
     width: 45%;
+    overflow-wrap: break-word;
+    padding-bottom: 80px;
 }
 
 .tais-almeida p{
@@ -137,11 +183,35 @@
     font-family: Lora, serif;
 }
 
+.secao5txt h1, h3{
+    font-family: Lora;
+    color: #0B3D5C;
+    
+}
+
+.secao5txt{
+
+}
+
+
+
+
+
 .contatos h3, h2{
     font-family: Lora, serif;
     color: #0B3D5C;
     margin: 5px;    
 }
+
+.contatos h2::after{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #c9a227;
+    margin: 8px auto 0;
+}
+
 
 .equipe h2{
 

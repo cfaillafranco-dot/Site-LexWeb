@@ -13,21 +13,26 @@ html, body{
 }
 
 header{
-    height: 180px;
     background-color: #F2EEE6;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;   
     align-items: center;
 }
 
 nav{
-    flex: 1;
+    flex: 1;  
+}
+
+.nav-redes{
+    flex: 1;                         
+    display: flex;
+    flex-direction: row;             
+    align-items: center;
 }
 
 .navbar{
-    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     
     
 }
@@ -47,7 +52,6 @@ main{
     text-align: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
     
 }
 
@@ -57,43 +61,6 @@ main{
     text-align: center;
 }
 
-.cards{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-    max-height: 800px;
-    padding-top: 20px;
-    
-    
-}
-
-.cards svg{
-    width: 32px;
-    height: 32px;
-    flex-shrink: 0;
-    stroke-width: 1.8;
-   
-}
-
-.card1{
-    display: flex;
-    align-items: flex-start;
-    width: 40%;
-    max-width: 600px;
-    padding-top: 20px;
-    gap: 15px;
-}
-
-.containersecao1{
-    width: 100%;
-    min-width: 300px;
-    box-sizing: border-box;
-    padding: 20px;
-}
 
 .secao2{
     background-color: #F8F6F0;
@@ -108,6 +75,7 @@ main{
 .secao2txt{
     text-align: center;
     padding-top: 40px;
+    
 }
 
 .secao2txt h1{
@@ -120,6 +88,7 @@ main{
 .membro{
     text-align: center;
     padding-top: 20px;
+    
 
 }
 
@@ -152,13 +121,17 @@ main{
     flex: 1;
     min-width: 0;
     
-
-    
 }
 
 .secao3img{
     flex: 1;
     min-width: 0;
+}
+
+.secao3img img, .secao3 p{
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
 }
 
 .secao4{
@@ -182,16 +155,90 @@ main{
 .imagem4{
     display: flex;
     justify-content: flex-end;
+    align-items: center ;
     padding-top: 80px;
+    gap: 25px;
 }
 
 
 
-.secao3img img, .secao3 p{
-    flex: 1;
-    min-width: 0;
-    box-sizing: border-box;
+.projeto-tais{
+    display: flex;
+    width: 50%;
+    height: auto;
+    display: inline-block;            
+    margin-top: 55px;                
+    padding: 20px 32px;               
+    background-color: #0b3d5c;       
+    color: #ffffff;                  
+    text-decoration: none;           
+    font-family: Lora;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;               
+    border-bottom: 3px solid #c9a227; 
+    box-shadow: 0 4px 10px rgba(11, 61, 92, 0.25); 
+    transition: all 0.3s ease;        
 }
+
+
+.secao5{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2EEE6;;
+    max-width: 100%;
+}
+
+.secao5txt{
+    padding-top: 40px;
+    text-align: center;
+
+    
+}
+
+.secao5txt::after{
+content: "";                    
+  display: block;                  
+  width: 80px;                    
+  height: 3px;                     
+  background-color: #c9a227;       
+  margin: 12px auto 0;            
+}
+
+.secao5-texto{
+    gap: 60px;
+}
+
+.secao5-texto button{
+    width: 50%;
+    height: auto;
+    display: inline-block;            
+    margin-top: 55px;                
+    margin-bottom: 20px;
+    padding: 20px 32px;               
+    background-color: #0b3d5c;       
+    color: #ffffff;                  
+    text-decoration: none;            
+    font-family: Lora;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;               
+    border-bottom: 3px solid #c9a227; 
+    box-shadow: 0 4px 10px rgba(11, 61, 92, 0.25); 
+    transition: all 0.3s ease;        
+}
+
+.secao5-texto button:hover{
+    background-color: #c9a227;       
+    color: #0b3d5c;                   
+    transform: translateY(-3px);      
+    box-shadow: 0 8px 16px rgba(11, 61, 92, 0.3);
+}
+
+
+
+
+
 
 footer{
     background-color: #F2EEE6;
@@ -200,28 +247,31 @@ footer{
     align-items: center;
     padding: 30px 20px;
     gap: 30px;
+    border-top: 4px solid #c9a227;  
 }
 
 .equipe{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 15px;
 }
 
 .membro-item{
+    width: 230px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: space-between;
 }
 
 .contatos{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;  
     width: 100%;
-    max-width: 1200px;
-    gap: 20px;
-     
+    max-width: 1000px;
+    align-items: start;
+      
 }
 
 
@@ -243,6 +293,9 @@ footer{
     margin-top: 10px;
 }
 
+
+
+
 .projeto-link{
     display: inline-flex;
     flex-direction: column;
@@ -254,6 +307,9 @@ footer{
     text-decoration: none; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
     transition: all 0.3s ease;
+    transform: translateY(-4px);
+    border-color: #c9a227;
+    box-shadow: 0 8px 18px rgba(11, 61, 92, 0.15);
 }
 
 
@@ -294,6 +350,9 @@ footer{
     width: 100%;
     max-width: var(--largura-conteudo);
     margin: 0 auto;
+    gap: 40px;
+    padding-top: 30px;
+    padding-bottom: 40px;
 }
  
 .card-item {
@@ -311,6 +370,7 @@ footer{
     transition: transform 200ms ease,
                 box-shadow 200ms ease,
                 border-color 200ms ease;
+                
 }
  
 .card-item:hover {
@@ -319,29 +379,46 @@ footer{
     box-shadow: var(--sombra-card);
     
 }
+
  
  
  
 .card-item .titulo {
     margin: 0 0 12px;
-    color: var(--cor-marinho);
+    color: #0B3D5C;
     font-family: "Lora", Georgia, serif;
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 1.4;
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
     
 }
  
 .card-item .descricao {
-    margin: 0 0 22px;
-    color: var(--cor-texto-suave);
+    color: #0B3D5C;
     font-size: 0.98rem;
-    line-height: 1.7;
+    line-height: 1.5;
+    padding-left: 10px;
+    width: 100%;
+    height: auto;
     
+}
+
+.copyright{
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+    border-top: 1px solid #E2DACB;   
+    padding-top: 20px;
+    font-size: 14px;
+    color: #0b3d5c;
 }
  
 
-/* TABLETS */
+/* TABLETS seção2 */
 @media (max-width: 980px) {
     .container-card {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -349,15 +426,15 @@ footer{
     }
 
     .card-item .descricao{
-        padding-left: 80px;
+        padding-left: 20px;
     }
 
     .card-item .titulo{
-        padding-left: 80px;
+        padding-left: 20px;
     }
 }
  
-/* CELULARES */
+/* CELULARES seção2 */
 @media (max-width: 620px) {
     .center {
         padding: 38px 20px 16px;
@@ -377,16 +454,7 @@ footer{
         padding: 24px;
     }
  
-    .card-item .imagens {
-        display: block;
-        width: 48px;
-        height: 48px;
-        margin-bottom: 16px;
-    }
  
-    .btn-card {
-        width: 100%;
-    }
 }
 
 
@@ -397,31 +465,81 @@ footer{
 /* TABLETS */
 @media (max-width: 900px) {
 
-    /* Header */
+    /* ---------- Header ---------- */
     header {
+        display: flex;
         height: auto;
-        padding: 15px;
+        padding: 15px 20px;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 10px;
     }
-
+ 
     .logo {
         width: 200px;
         height: auto;
+    }
+
+    .nav-redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
+        gap: 10px; 
+        white-space: nowrap;       
+        width: 100%;
         
     }
-
+ 
     .navbar {
         flex-wrap: wrap;
+        gap: 5px;
     }
-
+ 
     .navbar a {
         padding: 10px;
         font-size: 14px;
         letter-spacing: 1px;
+        
     }
 
-    /* Cards: duas colunas */
+    .card{
+        display: flex;
+        justify-content: center;   
+        align-items: center;
+        gap: 15px;                
+        width: auto;              
+        padding: 8px 20px;
+    }
+
+    .card a{
+        width: 40px;               
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    /* ---------- Seção 1 ---------- */
+    .secao1 {
+        padding: 30px;
+    }
+ 
+    .secao1txt {
+        max-width: 700px;
+        padding-top: 30px;
+    }
+ 
+    .secao1 h1,
+    .secao2txt h1,
+    .secao4txt h1 {
+        font-size: 32px;
+    }
+ 
+    .secao1 h2 {
+        font-size: 19px;
+    }
+ 
+    /* Cards: 2 colunas (no celular vira 1) */
     .cards {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -429,125 +547,208 @@ footer{
         padding: 15px;
         gap: 15px;
     }
-
+ 
     .card1 {
         width: 100%;
         min-width: 0;
     }
-
+ 
     .containersecao1 {
         min-width: 0;
         padding: 10px;
     }
-
+ 
     .card1 h3,
     .card1 p {
         width: 100%;
     }
-
-    /* Fotos da equipe */
+ 
+    /* ---------- Sobre nós ---------- */
+    .secao2 {
+        min-height: 0;
+        padding-bottom: 50px;
+        gap: 30px;
+    }
+ 
+   
     .membros {
         flex-wrap: wrap;
-        gap: 25px;
+        justify-content: center;
+        gap: 30px;
+        padding: 0 20px;
     }
-
+ 
     .membro {
-        max-width: 240px;
+        max-width: 220px;
     }
-
+ 
     .membro img {
         width: 100%;
         height: auto;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
+        aspect-ratio: 1 / 1;    
+        object-fit: cover;       
+    }
+ 
+    .secao2 p {
+        font-size: 16px;
     }
 
+    .secao2txt img{
+        
+    }
+ 
     .historia {
         width: 85%;
+        padding-top: 30px;
     }
 
-    /* Seção LexWeb */
+    .historia h2{
+        
+    }
+ 
+    /* ---------- Seção LexWeb ---------- */
+    
     .secao3 {
-        gap: 20px;
-        padding: 25px;
+        gap: 25px;
+        padding: 30px;
     }
-
+ 
     .secao3txt,
     .secao3img {
         flex: 1;
         min-width: 0;
     }
-
+ 
     .secao3img img {
         width: 100%;
         height: auto;
     }
-
-    /* Projetos */
-    .secao4 img {
-        display: block;
-        width: 90%;
-        max-width: 100%;
-        height: auto;
-        margin: 30px auto;
+ 
+    .secao3 h1 {
+        font-size: 30px;
     }
-
-    /* Seção Projetos */
+ 
+    .secao3txt p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+ 
+    /* ---------- Projetos ---------- */
     .secao4 {
-        padding: 30px 20px;
+        padding: 30px;
     }
-
+ 
     .secao4txt {
         padding-top: 20px;
     }
-
+ 
+    .secao4txt h2 {
+        font-size: 20px;
+    }
+ 
     .tais-almeida {
         padding: 10px;
     }
-
+ 
+    /* Texto em cima, imagem embaixo */
     .imagem4 {
-        display: flex;
+        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 25px;
-        padding: 40px 10px;
+        padding: 40px 0 20px;
+        gap: 30px;
     }
-
+ 
     .imagem4 p {
-        width: 55%;
+        width: 100%;
+        max-width: 700px;
         font-size: 16px;
         line-height: 1.7;
         overflow-wrap: break-word;
     }
-
+ 
+    .imagem4 a {
+        display: block;
+        width: 100%;
+        max-width: 600px;
+    }
+ 
     .imagem4 img {
-        width: 40%;
-        max-width: 100%;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+ 
+    /* ---------- Seção 5 (Monte seu projeto) ---------- */
+    .secao5 {
+        width: 100%;
+        padding: 20px 30px;
+    }
+ 
+    .secao5txt {
+        padding-top: 20px;
+    }
+ 
+    .secao5txt h1 {
+        font-size: 32px;
+    }
+ 
+    .imagem5 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+    }
+ 
+    .imagem5 img {
+        display: block;
+        width: 80%;
+        max-width: 450px;
         height: auto;
         object-fit: contain;
     }
-
-    /* Rodapé */
+ 
+    .secao5-texto {
+        width: 100%;
+        max-width: 550px;
+        text-align: center;
+    }
+ 
+    .secao5-texto p {
+        font-size: 16px;
+        line-height: 1.7;
+        overflow-wrap: break-word;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+ 
+    .secao5-texto button {
+        width: auto;             
+        max-width: 100%;
+        margin-top: 25px;
+        padding: 15px 30px;
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+ 
+    /* ---------- Rodapé ---------- */
+    footer {
+        padding: 30px;
+    }
+ 
     .footer-logo img {
         width: 300px;
         max-width: 100%;
         height: auto;
     }
-
+ 
+    /* Mantém as 3 colunas, só com menos espaço entre elas */
     .contatos {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: flex-start;
-        gap: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
     }
-
-    .equipe,
-    .footer-projetos {
-        flex: 1 1 200px;
-        min-width: 0;
-    }
-
+ 
     .footer-card {
         justify-content: center;
         flex-wrap: wrap;
@@ -555,6 +756,7 @@ footer{
         margin: 0;
     }
 }
+
 
 
 /* CELULARES */
@@ -925,6 +1127,54 @@ footer{
 
     .text {
         display: none;
+    }
+
+    .secao5 {
+        padding: 15px;
+    }
+
+    .secao5txt h1 {
+        font-size: 27px;
+    }
+
+    .secao5txt h2 {
+        font-size: 18px;
+    }
+
+    .imagem5 {
+        gap: 20px;
+    }
+
+    .imagem5 img {
+        width: 100%;
+        max-width: 320px;
+        height: auto;   
+        object-fit: contain;
+        margin-bottom: -30px;
+        margin-top: 10px;
+        
+    }
+
+    .secao5-texto {
+        padding: 0 5px;
+    }
+
+    .secao5-texto p {
+        font-size: 15px;
+        line-height: 1.8;
+        text-align: left;
+        margin: auto;
+        padding-bottom: 30px;
+        
+    }
+
+    .secao5-texto button {
+        width: 100%;
+        max-width: 280px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 15px;
+        font-size: 16px;
     }
 }
 
