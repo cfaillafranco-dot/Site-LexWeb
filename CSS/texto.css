@@ -137,12 +137,12 @@
 }
 
 .secao4txt::after{
-    content: "";                     /* obrigatório, mesmo vazio */
-    display: block;                  /* faz ocupar a própria linha */
-    width: 80px;                     /* comprimento da linha */
-    height: 3px;                     /* espessura */
-    background-color: #c9a227;       /* dourado */
-    margin: 12px auto 0;             /* centraliza e dá espaço acima */
+    content: "";                     
+    display: block;                  
+    width: 80px;                     
+    height: 3px;                     
+    background-color: #c9a227;      
+    margin: 12px auto 0;            
 }
 
 
