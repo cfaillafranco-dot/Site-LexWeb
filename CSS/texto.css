@@ -178,9 +178,25 @@
     padding-bottom: 80px;
 }
 
-.tais-almeida p{
-    color: #0B3D5C;
+.tais-almeida{
+    border-left: 3px solid #C99700;
+    background-color: #0B3D5C;
+    width: 20%;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.tais-almeida h3{
+    color: #FFF;
     font-family: Lora, serif;
+}
+
+.tais-almeida p{
+    color: #FFF;
+    font-family: Lora, serif;
+    
 }
 
 .secao5txt h1, h3{
@@ -224,4 +240,17 @@
 
 .footer-projetos h3{
     padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+.tais-almeida{
+    border-left: 3px solid #C99700;
+    background-color: #0B3D5C;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    }
+
 }

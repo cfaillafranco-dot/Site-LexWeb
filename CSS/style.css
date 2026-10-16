@@ -154,10 +154,6 @@ main{
     padding-top: 40px;
 }
 
-.tais-almeida{
-    text-align: center;
-    
-}
 
 .imagem4{
     display: flex;
@@ -192,7 +188,7 @@ main{
 .secao5{
     display: flex;
     flex-direction: column;
-    background-color: #F2EEE6;;
+    background-color: #F2EEE6;
     max-width: 100%;
 }
 
@@ -354,7 +350,7 @@ footer{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 40px;
-    width: 100%;
+    width: 90%;
     max-width: var(--largura-conteudo);
     margin: 0 auto;
     gap: 40px;
@@ -845,6 +841,11 @@ footer{
     }
 
     /* Cards: uma coluna */
+
+    .container-card{
+    width: 100%;
+    }
+
     .cards {
         display: flex;
         flex-direction: column;
@@ -956,12 +957,22 @@ footer{
         margin: 25px auto;
     }
 
-    .thaisalmeida h3 {
+    .tais-almeida{
+    border-left: 3px solid #C99700;
+    background-color: #0B3D5C;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+    }
+
+    .taisalmeida h3 {
         padding: 10px 5px 30px;
         overflow-wrap: break-word;
     }
 
-    .thaisalmeida img {
+    .taisalmeida img {
     display: block;
     width: 80%;
     max-width: 800px;
