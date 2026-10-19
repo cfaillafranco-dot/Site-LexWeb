@@ -41,25 +41,36 @@
     
 }
 
+/* codigo claude secao4*/
+.imagem4 > a{
+    width: 50%;
+    display: block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.imagem4 > a:hover{
+    transform: translateY(-8px) scale(1.03);
+    filter: drop-shadow(0 12px 18px rgba(11, 61, 92, 0.3));
+}
+
 .imagem4 img{
-    height: auto;
-    width: 100%;
-    padding-bottom: 60px;
+    width: 100%;                  
+    height: auto;                
     display: block;
 }
 
-
-.imagem4 a{
-    height: auto;
-    width: 45%;         
-    display: block;      
-    transition: transform 0.3s ease,
-                filter 0.3s ease;        
+.botao-projeto{
+    display: inline-block;        /* permite aplicar padding no link */
+    background-color: #0B3D5C;
+    color: #FFF;
+    font-family: Lora, serif;
+    text-decoration: none;        /* tira o sublinhado do link */
+    padding: 12px 28px;           /* espaço interno do botão */
+    transition: background-color 0.3s ease; /* suaviza a troca de cor */
 }
 
-.imagem4 a:hover{
-    transform: translateY(-8px) scale(1.03);   
-    filter: drop-shadow(0 12px 18px rgba(11, 61, 92, 0.3));  
+.botao-projeto:hover{
+    background-color: #C99700;    /* fica dourado ao passar o mouse */
 }
 
 .imagem5{
@@ -90,6 +101,8 @@
 }
 
 @media screen and (max-width: 600px) {
+
+
 
     main > #secao4.secao4 {
         display: flex;
