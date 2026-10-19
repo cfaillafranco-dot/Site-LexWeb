@@ -154,13 +154,37 @@ main{
     padding-top: 40px;
 }
 
+.destaques{
+    width: 60%;                   /* ocupa 40% da linha */
+}   
 
 .imagem4{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center ;
-    padding-top: 80px;
-    gap: 25px;
+    display: flex;                /* coloca os itens lado a lado */
+    justify-content: center;      /* centraliza o conjunto na horizontal */
+    align-items: center;          /* alinha os itens no meio, na vertical */
+    gap: 50px;                    /* espaço entre texto e imagem */
+    padding: 60px 8%;             /* espaço em cima/baixo e nas laterais */
+}
+
+
+
+.lista-destaques{
+    list-style: none;             /* tira as bolinhas da lista */
+    padding: 0;                   /* tira o recuo padrão da lista */
+    margin: 0 0 30px 0;           /* só margem embaixo */
+}
+
+.lista-destaques li{
+    display: flex;                /* ícone e texto lado a lado */
+    align-items: center;          /* alinha ícone e texto no meio */
+    gap: 12px;                    /* espaço entre ícone e texto */
+    background-color: #FFF;       /* fundo branco para destacar do creme */
+    border-left: 3px solid #C99700; /* barrinha dourada, igual ao card da Taís */
+    border-radius: 4px;           /* cantos levemente arredondados */
+    padding: 12px 16px;           /* espaço interno */
+    margin-bottom: 12px;          /* espaço entre os itens */
+    color: #0B3D5C;
+    font-family: Lora, serif;
 }
 
 
@@ -419,6 +443,125 @@ footer{
     font-size: 14px;
     color: #0b3d5c;
 }
+
+/* ---------- Botão ---------- */
+.botao-tema{
+    position: fixed;             
+    bottom: 20px;                 
+    left: 20px;                 
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;           
+    border: none;                 
+    background-color: #0B3D5C;
+    color: #FFF;                  
+    cursor: pointer;              
+    display: flex;
+    align-items: center;          
+    justify-content: center;      
+    z-index: 1000;                
+}
+
+/* Mostra só a lua no modo claro e só o sol no modo escuro */
+.icone-sol{ display: none; }
+body.modo-escuro .icone-sol{ display: block; }
+body.modo-escuro .icone-lua{ display: none; }
+
+/* ---------- Modo escuro ---------- */
+
+/* Fundos das áreas principais */
+body.modo-escuro,
+body.modo-escuro header,
+body.modo-escuro .secao1,
+body.modo-escuro .secao2,
+body.modo-escuro .secao3,
+body.modo-escuro .secao4,
+body.modo-escuro .secao5{
+    background-color: #0F1B26;  
+    
+}
+
+body.modo-escuro .secao1 h3{
+    color: #FFF;
+}
+body.modo-escuro .secao1 p{
+    color: #FFF;
+}
+
+body.modo-escuro .lista-destaques li{
+    color: #FFF;
+}
+
+/* Textos */
+body.modo-escuro h1,
+body.modo-escuro h2,
+body.modo-escuro h3,
+body.modo-escuro p,
+body.modo-escuro .navbar a{
+    color: #F8F6F0;              
+}
+
+/* Cards e lista de destaques */
+body.modo-escuro .card-item,
+body.modo-escuro .lista-destaques li{
+    background-color: #1A2B3A;   
+}
+
+/* Botão "Ver projeto" */
+body.modo-escuro .botao-projeto{
+    background-color: #C99700;   
+}
+
+/* Botão de tema no modo escuro */
+body.modo-escuro .botao-tema{
+    background-color: #C99700;
+}
+
+/* Fundo do footer */
+body.modo-escuro footer{
+    background-color: #0A1219;   
+}
+
+/* Textos do footer */
+body.modo-escuro footer h2,
+body.modo-escuro footer h3,
+body.modo-escuro footer p,
+body.modo-escuro .copyright{
+    color: #F8F6F0;              
+}
+
+
+body.modo-escuro .projeto-link{
+    background-color: #1A2B3A;   
+}
+
+
+body.modo-escuro img{
+    filter: brightness(0.75);    
+}
+
+
+body.modo-escuro .logo,
+body.modo-escuro .footer-logo img{
+    background-color: #F8F6F0;    
+    padding: 8px 14px;            
+    filter: none;                 
+}
+
+body.modo-escuro .logo{
+    background-color: #F8F6F0;
+    padding: 8px 14px;
+    filter: brightness(0.60);     
+    box-sizing: content-box;
+}
+
+
+body.modo-escuro .footer-logo img{
+    background-color: #F8F6F0;
+    padding: 8px 14px;
+    border-radius: 8px;
+    filter: brightness(0.85);     
+}
  
 
 /* TABLETS seção2 */
@@ -457,8 +600,29 @@ footer{
         padding: 24px;
     }
  
- 
+    body.modo-escuro .logo{
+    background-color: #F8F6F0;
+    padding: 8px 14px;
+    border-radius: 50%;
+    filter: brightness(0.60);     
+    box-sizing: content-box;
 }
+
+
+body.modo-escuro .footer-logo img{
+    background-color: #F8F6F0;
+    padding: 8px 14px;
+    border-radius: 50%;
+    filter: brightness(0.85);     
+}
+
+body.modo-escuro .tais-almeida{
+    background-color: #0B3D5C;
+     
+           
+}
+}
+
 
 
 
@@ -680,6 +844,11 @@ footer{
         width: 100%;
         height: auto;
     }
+
+    .destaques{
+        margin: auto;
+        margin-top: 2   0px;
+    }
  
     /* ---------- Seção 5 (Monte seu projeto) ---------- */
     .secao5 {
@@ -724,6 +893,7 @@ footer{
         margin: auto;
         text-align: center;
         padding-bottom: 40px;
+        width: 20%;
     }
  
     .secao5-texto button {
@@ -770,18 +940,13 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center; 
-        justify-content: center;
         text-align: center;
+        justify-content: center;
         width: 100%;
-        padding: 20px 0;
+        padding: 12px 0;
     }
 
-    .logo {
-        width: 180px;
-        padding-right: 20px;
-
-    }
-
+    
     nav {
         width: 100%;
         display: flex;
@@ -792,32 +957,25 @@ footer{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         width: 100%;
-        gap: 5px;
+        gap: 2px 4px;
+        margin-top: 8px;
     }
 
     .navbar a {
-        padding: 8px 10px;
+        padding: 6px 8px;
         font-size: 12px;
         text-align: center;
+        letter-spacing: 1px;
     }
 
     .card {
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        width: 100%;
-        margin: 15px auto 0 auto;
-        padding: 0;
+        margin: 8px auto 0 auto;
     }
 
     .socialContainer {
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 36px;
+        height: 36px;
     }
 
     /* Seção 1 */
@@ -1067,7 +1225,7 @@ footer{
     }
 
     .footer-logo img {
-        width: 250px;
+        width: 150px;
         max-width: 100%;
         height: auto;
     }
@@ -1194,5 +1352,28 @@ footer{
         padding: 15px;
         font-size: 16px;
     }
+
+    body.modo-escuro .logo{
+    background-color: #F8F6F0;
+    padding: 8px 14px;
+    border-radius: 8px;
+    filter: brightness(0.60);     
+    box-sizing: content-box;
 }
+
+
+body.modo-escuro .footer-logo img{
+    background-color: #F8F6F0;
+    padding: 8px 14px;
+    border-radius: 8px;
+    filter: brightness(0.85);     
+}
+
+body.modo-escuro .tais-almeida{
+    background-color: #0B3D5C;
+     
+           
+}
+}
+
 

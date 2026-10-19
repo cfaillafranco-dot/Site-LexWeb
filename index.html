@@ -11,6 +11,10 @@
     <link rel="icon" type="image/png" href="imagens/logo alta resolucao-Photoroom.png">
 </head>
 <body>
+    <button id="botao-tema" class="botao-tema" aria-label="Alternar modo escuro">
+    <i data-lucide="moon" class="icone-lua"></i>
+    <i data-lucide="sun" class="icone-sol"></i>
+    </button>
     <header>
 
         <img src="imagens/logo 2.png" alt="Logo da empresa" class="logo">
@@ -42,7 +46,7 @@
 
     <main>
         <section class="banner">
-            <img src="imagens/imagem fundo 2.jfif" alt="">
+            <img src="imagens/imagem fundo 3.jfif" alt="">
         </section>
 
         <section id="secao1" class="secao1">
@@ -167,6 +171,22 @@
             </div>
 
             <div class="imagem4">
+<<<<<<< HEAD
+
+        <div class="destaques">
+
+        <ul class="lista-destaques">
+            <li><i data-lucide="book-open"></i> Linguagem simples</li>
+            <li><i data-lucide="accessibility"></i> Acessibilidade</li>
+            <li><i data-lucide="circle-help"></i> Dúvidas frequentes</li>
+        </ul>
+
+        <a class="botao-projeto" href="https://allysonfonsecaex.github.io/Transforme-se-Advocacia-previdenciaria/">Ver projeto →</a>
+        </div>
+
+        <a href="https://allysonfonsecaex.github.io/Transforme-se-Advocacia-previdenciaria/"><img src="imagens/tais notebook.png" alt="Site da advogada Taís Almeida Patrocinio"></a>
+        </div>
+=======
                 <p>O projeto desenvolvido para a advogada Taís Almeida Patrocinio surgiu a partir da compreensão de que o acesso à informação é fundamental para garantir que as pessoas conheçam e busquem seus direitos. Na área previdenciária, essa necessidade se torna ainda mais evidente, pois muitos cidadãos enfrentam dificuldades para compreender as regras do INSS, identificar os benefícios aos quais podem ter direito e encontrar orientação confiável.
                     
                 Pessoas idosas, pessoas com deficiência e trabalhadores em situações de vulnerabilidade podem encontrar barreiras para acessar informações sobre aposentadorias, pensões e outros benefícios previdenciários. A linguagem jurídica complexa e a falta de informações claras podem tornar esse processo ainda mais difícil. Por isso, acreditamos que a tecnologia pode desempenhar um papel importante na aproximação entre os profissionais do Direito e a população.
@@ -175,6 +195,7 @@
             
             <a href="https://allysonfonsecaex.github.io/Transforme-se-Advocacia-previdenciaria/"><img src="imagens/tais notebook.png" alt=""></a>
             </div>
+>>>>>>> 602151c367ccde1d4df19c55a04e1f3dd8943fc3
             
         </section>
 
@@ -300,10 +321,34 @@
     </footer>
 
     <script src="https://unpkg.com/lucide@latest"></script>
-
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
     lucide.createIcons();
     </script>
+<<<<<<< HEAD
+    <script>
+    lucide.createIcons();
+
+    const botaoTema = document.getElementById('botao-tema');
+
+    // Ao abrir o site, vê se o visitante já tinha escolhido o modo escuro antes
+    if (localStorage.getItem('tema') === 'escuro') {
+    document.body.classList.add('modo-escuro');
+    }
+
+    // Ao clicar no botão, liga/desliga o modo escuro
+    botaoTema.addEventListener('click', function () {
+    document.body.classList.toggle('modo-escuro');
+
+    // Salva a escolha para lembrar na próxima visita
+    if (document.body.classList.contains('modo-escuro')) {
+        localStorage.setItem('tema', 'escuro');
+    } else {
+        localStorage.setItem('tema', 'claro');
+    }
+    });
+</script>
+=======
 
     <div vw class="enabled">
     <div vw-access-button class="active"></div>
@@ -315,5 +360,6 @@
     <script>
     new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
+>>>>>>> 602151c367ccde1d4df19c55a04e1f3dd8943fc3
 </body>
 </html>

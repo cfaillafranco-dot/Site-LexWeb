@@ -189,13 +189,14 @@
 }
 
 .tais-almeida h3{
-    color: #FFF;
+    color: #fff;
     font-family: Lora, serif;
 }
 
 .tais-almeida p{
-    color: #FFF;
+    color: #fff ;
     font-family: Lora, serif;
+    
     
 }
 
@@ -245,12 +246,18 @@
 @media (max-width: 600px) {
 .tais-almeida{
     border-left: 3px solid #C99700;
-    background-color: #0B3D5C;
+    background-color: #F2EEE6;
     height: auto;
-    width: 90%;
+    width: 80%;
     margin: auto;
     margin-top: 10px;
     text-align: center;
     }
 
+.tais-almeida h3{
+    color: #0B3D5C;
+}
+.tais-almeida p{
+    color: #0B3D5C;
+}
 }
