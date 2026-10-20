@@ -15,6 +15,22 @@
     <i data-lucide="moon" class="icone-lua"></i>
     <i data-lucide="sun" class="icone-sol"></i>
     </button>
+
+    <div class="menu-flutuante" id="menu-flutuante">
+    <button id="botao-menu" class="botao-menu" aria-label="Abrir menu" aria-expanded="false">
+        <i data-lucide="menu" class="icone-menu"></i>
+        <i data-lucide="x" class="icone-fechar"></i>
+    </button>
+
+    <nav class="lista-menu">
+        <a href="#secao1">INICIO</a>
+        <a href="#sobre">SOBRE NÓS</a>
+        <a href="#secao3">PROJETOS</a>
+        <a href="#contato">CONTATO</a>
+        <a href="#secao5">MONTE SEU PROJETO</a>
+    </nav>
+    </div>
+
     <header>
 
         <img src="imagens/logo 2.png" alt="Logo da empresa" class="logo">
@@ -152,7 +168,7 @@
             </div>
 
             <div class="secao3img">
-            <img src="imagens/imagem secao3.jfif" alt="">
+            <img src="imagens/imagem secao 3 sem fundo.png" alt="">
             </div>
 
             
@@ -198,8 +214,8 @@
 
     
             <div class="secao5-texto">
-            <p>Sabemos que a rotina jurídica exige eficiência. Criámos uma ferramenta onde pode explorar modelos de estrutura e selecionar as funções essenciais para o site do seu escritório.
-
+            <p>Sabemos que a rotina jurídica exige eficiência. Criámos uma ferramenta onde pode explorar estruturas e selecionar as funções essenciais para o site do seu escritório.
+ 
             Monte a sua combinação ideal e envie-nos o resumo por WhatsApp para iniciarmos uma conversa objetiva e personalizada sobre o seu projeto.</p>
 
             <button onclick="window.location.href='montar-projeto.html'">
@@ -307,12 +323,15 @@
         <p class="copyright">© 2026 Lex Web – Soluções Jurídicas Digitais</p>
     </footer>
 
+    
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
     lucide.createIcons();
     </script>
-    <script>
+    <script src="JAVASCRIPT/navbar.js"></script>
+
+<script>
 lucide.createIcons();
 
 const botaoTema = document.getElementById('botao-tema');
@@ -334,5 +353,6 @@ botaoTema.addEventListener('click', function () {
     }
 });
 </script>
+
 </body>
 </html>

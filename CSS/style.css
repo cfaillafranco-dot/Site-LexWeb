@@ -543,26 +543,31 @@ body.modo-escuro img{
 
 body.modo-escuro .logo,
 body.modo-escuro .footer-logo img{
-    background-color: #F8F6F0;    
     padding: 8px 14px;            
     filter: none;                 
 }
 
 body.modo-escuro .logo{
-    background-color: #F8F6F0;
     padding: 8px 14px;
-    filter: brightness(0.60);     
+    filter: brightness(0.85 );     
     box-sizing: content-box;
+    
+}
+
+body.modo-escuro .secao3 img{
+    filter: brightness(1.00 ); 
 }
 
 
 body.modo-escuro .footer-logo img{
-    background-color: #F8F6F0;
     padding: 8px 14px;
-    border-radius: 8px;
-    filter: brightness(0.85);     
+    filter: brightness(0.85); 
+    
+       
 }
- 
+
+
+
 
 /* TABLETS seção2 */
 @media (max-width: 980px) {
@@ -601,7 +606,6 @@ body.modo-escuro .footer-logo img{
     }
  
     body.modo-escuro .logo{
-    background-color: #F8F6F0;
     padding: 8px 14px;
     border-radius: 50%;
     filter: brightness(0.60);     
@@ -610,7 +614,6 @@ body.modo-escuro .footer-logo img{
 
 
 body.modo-escuro .footer-logo img{
-    background-color: #F8F6F0;
     padding: 8px 14px;
     border-radius: 50%;
     filter: brightness(0.85);     
@@ -623,13 +626,7 @@ body.modo-escuro .tais-almeida{
 }
 }
 
-
-
-
-
-
-
-/* TABLETS */
+/* TABLET */
 @media (max-width: 900px) {
 
     /* ---------- Header ---------- */
@@ -928,6 +925,7 @@ body.modo-escuro .tais-almeida{
         gap: 12px;
         margin: 0;
     }
+
 }
 
 
@@ -1354,7 +1352,6 @@ body.modo-escuro .tais-almeida{
     }
 
     body.modo-escuro .logo{
-    background-color: #F8F6F0;
     padding: 8px 14px;
     border-radius: 8px;
     filter: brightness(0.60);     
@@ -1363,7 +1360,6 @@ body.modo-escuro .tais-almeida{
 
 
 body.modo-escuro .footer-logo img{
-    background-color: #F8F6F0;
     padding: 8px 14px;
     border-radius: 8px;
     filter: brightness(0.85);     

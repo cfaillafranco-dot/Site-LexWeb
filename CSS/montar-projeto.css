@@ -204,6 +204,57 @@ main{
     box-shadow: none;
 }
 
+/* Fundo da seção */
+body.modo-escuro .seu-projeto{
+    background-color: #0F1B26;    /* azul bem escuro, igual ao resto do site */
+}
+
+/* Textos do topo e títulos das perguntas */
+body.modo-escuro .projetotxt h1,
+body.modo-escuro .projetotxt h3,
+body.modo-escuro .projetotxt p,
+body.modo-escuro .pergunta h3{
+    color: #F8F6F0;               /* creme claro para ler bem no fundo escuro */
+}
+
+/* Caixa que guarda o formulário */
+body.modo-escuro .container-projeto{
+    background-color: #1A2B3A;    /* um pouco mais claro que o fundo, para destacar */
+}
+
+/* Cada opção (radio e checkbox) */
+body.modo-escuro .opcao{
+    color: #F8F6F0;               /* texto da opção */
+    background-color: #0F1B26;    /* fundo da opção, mais escuro que a caixa */
+}
+
+/* Marcação dos radios e checkboxes */
+body.modo-escuro .opcao input{
+    accent-color: #C99700;        /* deixa a bolinha/quadradinho marcado em dourado */
+}
+
+/* Campo de texto */
+body.modo-escuro textarea{
+    background-color: #0F1B26;    /* fundo do campo */
+    color: #F8F6F0;               /* texto digitado */
+    border: 1px solid #3A4F61;    /* borda discreta */
+}
+
+/* Texto de exemplo ("Descreva o que você tem em mente...") */
+body.modo-escuro textarea::placeholder{
+    color: #9FB0BF;               /* cinza-azulado, para parecer "apagado" */
+}
+
+/* Botão de enviar */
+body.modo-escuro .opcoes button{
+    background-color: #C99700;    /* dourado, para aparecer no fundo escuro */
+    color: #0F1B26;               /* texto escuro sobre o dourado */
+}
+
+body.modo-escuro header{
+    background-color: #0A1219;
+}
+
 @media (max-width: 600px) {
 
     .container-projeto{

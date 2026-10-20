@@ -12,6 +12,10 @@
     <link rel="icon" type="image/png" href="imagens/logo alta resolucao-Photoroom.png">
 </head>
 <body>
+    <button id="botao-tema" class="botao-tema" aria-label="Alternar modo escuro">
+    <i data-lucide="moon" class="icone-lua"></i>
+    <i data-lucide="sun" class="icone-sol"></i>
+    </button>
     <header>
 
         <a href="file:///C:/Users/caio.ffranco/OneDrive%20-%20SENAC%20-%20SP/%C3%81rea%20de%20Trabalho/CAIO/ProjetoIntegrador/Site%20Empresa/Site-LexWeb/index.html"><img src="imagens/logo 2.png" alt="Logo da empresa" class="logo"></a>
@@ -235,5 +239,26 @@
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>lucide.createIcons();</script>
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+    lucide.createIcons();
+
+    const botaoTema = document.getElementById('botao-tema');
+
+    if (localStorage.getItem('tema') === 'escuro') {
+        document.body.classList.add('modo-escuro');
+    }
+
+    
+    botaoTema.addEventListener('click', function () {
+        document.body.classList.toggle('modo-escuro');
+
+        
+        if (document.body.classList.contains('modo-escuro')) {
+            localStorage.setItem('tema', 'escuro');
+        } else {
+            localStorage.setItem('tema', 'claro');
+        }
+    });
+</script>
 </body>
 </html>
