@@ -570,7 +570,18 @@ body.modo-escuro .footer-logo img{
 
 
 /* TABLETS seção2 */
-@media (max-width: 980px) {
+@media (max-width: 1024px) {
+
+    
+
+    .card{
+        
+    }
+
+    .membros{
+        gap: 20px;
+    }
+
     .container-card {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 18px;
