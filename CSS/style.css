@@ -565,7 +565,7 @@ body.modo-escuro .footer-logo img{
 
 
 /* TABLETS seção2 */
-@media (max-width: 1024px) {
+@media (max-width: 1032px) {
 
     header {
         height: auto;
@@ -773,12 +773,7 @@ body.modo-escuro .tais-almeida{
         max-width: 220px;
     }
  
-    .membro img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 1 / 1;    
-        object-fit: cover;       
-    }
+    
  
     .secao2 p {
         font-size: 16px;
