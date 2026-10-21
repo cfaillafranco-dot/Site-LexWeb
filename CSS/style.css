@@ -155,34 +155,34 @@ main{
 }
 
 .destaques{
-    width: 60%;                   /* ocupa 40% da linha */
+    width: 60%;                   
 }   
 
 .imagem4{
-    display: flex;                /* coloca os itens lado a lado */
-    justify-content: center;      /* centraliza o conjunto na horizontal */
-    align-items: center;          /* alinha os itens no meio, na vertical */
-    gap: 50px;                    /* espaço entre texto e imagem */
-    padding: 60px 8%;             /* espaço em cima/baixo e nas laterais */
+    display: flex;              
+    justify-content: center;     
+    align-items: center;          
+    gap: 50px;                   
+    padding: 60px 8%;           
 }
 
 
 
 .lista-destaques{
-    list-style: none;             /* tira as bolinhas da lista */
-    padding: 0;                   /* tira o recuo padrão da lista */
-    margin: 0 0 30px 0;           /* só margem embaixo */
+    list-style: none;             
+    padding: 0;                  
+    margin: 0 0 30px 0;          
 }
 
 .lista-destaques li{
-    display: flex;                /* ícone e texto lado a lado */
-    align-items: center;          /* alinha ícone e texto no meio */
-    gap: 12px;                    /* espaço entre ícone e texto */
-    background-color: #FFF;       /* fundo branco para destacar do creme */
-    border-left: 3px solid #C99700; /* barrinha dourada, igual ao card da Taís */
-    border-radius: 4px;           /* cantos levemente arredondados */
-    padding: 12px 16px;           /* espaço interno */
-    margin-bottom: 12px;          /* espaço entre os itens */
+    display: flex;               
+    align-items: center;         
+    gap: 12px;                  
+    background-color: #FFF;    
+    border-left: 3px solid #C99700; 
+    border-radius: 4px;          
+    padding: 12px 16px;         
+    margin-bottom: 12px;          
     color: #0B3D5C;
     font-family: Lora, serif;
 }
@@ -261,11 +261,6 @@ content: "";
     transform: translateY(-3px);      
     box-shadow: 0 8px 16px rgba(11, 61, 92, 0.3);
 }
-
-
-
-
-
 
 footer{
     background-color: #F2EEE6;
@@ -572,10 +567,28 @@ body.modo-escuro .footer-logo img{
 /* TABLETS seção2 */
 @media (max-width: 1024px) {
 
-    
+    header {
+        height: auto;
+        padding: 15px 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
 
-    .card{
-        
+    .nav-redes {
+        flex: 1 1 100%;             
+        flex-direction: column;      
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        white-space: nowrap;
+    }
+
+    .card {
+        margin: 0;
+        width: fit-content;
     }
 
     .membros{
@@ -594,6 +607,8 @@ body.modo-escuro .footer-logo img{
     .card-item .titulo{
         padding-left: 20px;
     }
+
+    
 }
  
 /* CELULARES seção2 */
@@ -639,6 +654,7 @@ body.modo-escuro .tais-almeida{
 
 /* TABLET */
 @media (max-width: 900px) {
+
 
     /* ---------- Header ---------- */
     header {
@@ -880,13 +896,7 @@ body.modo-escuro .tais-almeida{
         width: 100%;
     }
  
-    .imagem5 img {
-        display: block;
-        width: 80%;
-        max-width: 450px;
-        height: auto;
-        object-fit: contain;
-    }
+    
  
     .secao5-texto {
         width: 100%;
@@ -969,13 +979,6 @@ body.modo-escuro .tais-almeida{
         width: 100%;
         gap: 2px 4px;
         margin-top: 8px;
-    }
-
-    .navbar a {
-        padding: 6px 8px;
-        font-size: 12px;
-        text-align: center;
-        letter-spacing: 1px;
     }
 
     .card {
@@ -1365,7 +1368,7 @@ body.modo-escuro .tais-almeida{
     body.modo-escuro .logo{
     padding: 8px 14px;
     border-radius: 8px;
-    filter: brightness(0.60);     
+    filter: brightness(0.85);     
     box-sizing: content-box;
 }
 
@@ -1381,6 +1384,8 @@ body.modo-escuro .tais-almeida{
      
            
 }
+
+
 }
 
 
