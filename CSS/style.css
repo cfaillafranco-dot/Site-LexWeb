@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-html{
-    
-}
-
-body{
-    
-}
-
 html, body{
     width: 100%;
     max-width: 100%;
@@ -49,9 +41,6 @@ nav{
     color: #000;
 }
 
-main{
-
-}
 
 .secao1{
     background-color: #F2EEE6;
@@ -119,7 +108,6 @@ main{
     align-items: center;
     gap: 40px;
     padding: 40px;
-    box-sizing: border-box;
     background-color: #F2EEE6;
     
 }
@@ -138,7 +126,6 @@ main{
 .secao3img img, .secao3 p{
     flex: 1;
     min-width: 0;
-    box-sizing: border-box;
 }
 
 .secao4{
@@ -185,27 +172,6 @@ main{
     margin-bottom: 12px;          
     color: #0B3D5C;
     font-family: Lora, serif;
-}
-
-
-
-.projeto-tais{
-    display: flex;
-    width: 50%;
-    height: auto;
-    display: inline-block;            
-    margin-top: 55px;                
-    padding: 20px 32px;               
-    background-color: #0b3d5c;       
-    color: #ffffff;                  
-    text-decoration: none;           
-    font-family: Lora;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 8px;               
-    border-bottom: 3px solid #c9a227; 
-    box-shadow: 0 4px 10px rgba(11, 61, 92, 0.25); 
-    transition: all 0.3s ease;        
 }
 
 
@@ -372,7 +338,6 @@ footer{
     width: 90%;
     max-width: var(--largura-conteudo);
     margin: 0 auto;
-    gap: 40px;
     padding-top: 30px;
     padding-bottom: 40px;
 }
@@ -773,14 +738,8 @@ body.modo-escuro .tais-almeida{
         max-width: 220px;
     }
  
-    
- 
     .secao2 p {
         font-size: 16px;
-    }
-
-    .secao2txt img{
-        
     }
  
     .historia {
@@ -788,9 +747,6 @@ body.modo-escuro .tais-almeida{
         padding-top: 30px;
     }
 
-    .historia h2{
-        
-    }
  
     /* ---------- Seção LexWeb ---------- */
     
@@ -1155,7 +1111,6 @@ body.modo-escuro .tais-almeida{
     .secao4 {
         padding: 25px 20px;
         width: 100%;
-        box-sizing: border-box;
     }
 
     .secao4txt {
@@ -1197,7 +1152,6 @@ body.modo-escuro .tais-almeida{
         width: 100%;
         gap: 25px;
         padding: 25px 0;
-        box-sizing: border-box;
     }
 
     .imagem4 p {
@@ -1207,7 +1161,6 @@ body.modo-escuro .tais-almeida{
         line-height: 1.7;
         text-align: justify;
         overflow-wrap: normal;
-        box-sizing: border-box;
     }
 
     .imagem4 img {
