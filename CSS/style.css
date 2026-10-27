@@ -527,8 +527,6 @@ body.modo-escuro .footer-logo img{
 }
 
 
-
-
 /* TABLETS seção2 */
 @media (max-width: 1032px) {
 
@@ -618,7 +616,7 @@ body.modo-escuro .tais-almeida{
 }
 
 /* TABLET */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
 
     /* ---------- Header ---------- */

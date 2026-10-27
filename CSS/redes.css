@@ -136,6 +136,20 @@
   transition-duration: 0.3s;
 }
 
+@media (max-width: 1000px) {
+
+  html{
+    
+  }
+
+  .nav-redes{
+    max-width: 800px;
+
+  }
+
+}
+
+
 @media (max-width: 600px) {
 
     .card{
